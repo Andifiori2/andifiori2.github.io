@@ -1,5 +1,3 @@
-<style>
-
 :root{
     --white:#ffffff;
     --gray:#f2f2f2;
@@ -12,18 +10,29 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:var(--gray);
     color:var(--black);
 }
 
+/* =========================
+   HEADER
+========================= */
+
 .header{
     position:sticky;
     top:0;
-    z-index:100;
+    z-index:1000;
+
     background:var(--white);
-    padding:20px 30px;
+
+    padding:16px 24px;
+
     border-bottom:1px solid #e5e5e5;
 
     display:grid;
@@ -32,7 +41,8 @@ body{
 }
 
 .name{
-    font-size:18px;
+    font-size:16px;
+    font-weight:400;
 }
 
 .logo{
@@ -40,7 +50,7 @@ body{
 }
 
 .logo img{
-    height:50px;
+    height:38px;
     width:auto;
     display:block;
 }
@@ -48,54 +58,72 @@ body{
 .links{
     justify-self:end;
     display:flex;
-    gap:20px;
+    gap:18px;
 }
 
 .links a{
     color:var(--black);
     text-decoration:none;
+    transition:opacity .2s ease;
 }
 
 .links a:hover{
-    opacity:.6;
+    opacity:.5;
 }
+
+/* =========================
+   GALLERY
+========================= */
 
 .gallery{
     width:100%;
-    padding:14px;
+    padding:16px;
 
-    column-count:3;
-    column-gap:14px;
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(320px,1fr)
+    );
+
+    gap:16px;
 }
+
+/* =========================
+   PROJECT CARD
+========================= */
 
 .project{
-    display:inline-block;
-    width:100%;
-    margin-bottom:14px;
-
     text-decoration:none;
     color:var(--black);
-}
 
-.thumb{
-    width:100%;
-    background:white;
-    overflow:hidden;
-}
+    display:flex;
+    flex-direction:column;
 
-.thumb img{
-    width:100%;
-    display:block;
-}
+    gap:8px;
 
-.project-title{
-    padding:10px 0 20px;
-    font-size:14px;
+    transition:opacity .2s ease;
 }
 
 .project:hover{
     opacity:.85;
 }
+
+.thumb{
+    width:100%;
+    overflow:hidden;
+    background:var(--white);
+}
+
+.project-title{
+    font-size:13px;
+    line-height:1.4;
+}
+
+/* =========================
+   RATIOS
+========================= */
 
 .hero{
     aspect-ratio:16/9;
@@ -109,33 +137,42 @@ body{
     aspect-ratio:1/1;
 }
 
+.tall{
+    aspect-ratio:3/4;
+}
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
 .placeholder{
     width:100%;
     height:100%;
-    background:#e8e8e8;
+
+    background:#e6e6e6;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    color:#888;
-    font-size:13px;
+    color:#777;
+
+    font-size:12px;
     letter-spacing:1px;
+    text-align:center;
+
+    padding:20px;
 }
 
-@media (max-width:1000px){
+/* =========================
+   MOBILE
+========================= */
 
-    .gallery{
-        column-count:2;
-    }
-
-}
-
-@media (max-width:700px){
+@media (max-width:768px){
 
     .header{
         grid-template-columns:1fr;
-        gap:15px;
+        gap:14px;
         text-align:center;
     }
 
@@ -153,9 +190,7 @@ body{
     }
 
     .gallery{
-        column-count:1;
+        grid-template-columns:1fr;
     }
 
 }
-
-</style>
