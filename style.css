@@ -55,10 +55,6 @@ body{
     display:block;
 }
 
-.logo a{
-    display:block;
-}
-
 .links{
     justify-self:end;
     display:flex;
