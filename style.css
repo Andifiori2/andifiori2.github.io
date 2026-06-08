@@ -182,7 +182,7 @@ body{
     }
 
     .name{
-        font-size:14px;
+        display:none;
     }
 
     .links{
