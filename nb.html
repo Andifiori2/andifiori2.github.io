@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nobilitas Bestiarum</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.project-page{
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:40px;
+    padding:40px;
+}
+
+.project-gallery{
+    column-count:2;
+    column-gap:14px;
+}
+
+.project-gallery img{
+    width:100%;
+    margin-bottom:14px;
+    display:block;
+}
+
+.project-info{
+    position:sticky;
+    top:100px;
+    align-self:start;
+}
+
+.project-info h1{
+    font-size:14px;
+    font-weight:400;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.project-info p{
+    font-size:13px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.back{
+    text-decoration:none;
+    color:black;
+}
+
+@media(max-width:900px){
+
+    .project-page{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .project-gallery{
+        column-count:1;
+    }
+
+    .project-info{
+        position:relative;
+        top:auto;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="name">
+        Andi Fiorilli
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo-DTS.svg">
+        </a>
+    </div>
+
+    <div class="links">
+        <a href="https://instagram.com/designtomatosoup" target="_blank">IG</a>
+        <a href="https://www.linkedin.com/in/andresfiorilli/" target="_blank">LI</a>
+    </div>
+
+</header>
+
+<div class="project-page">
+
+    <div class="project-gallery">
+
+        <img src="https://picsum.photos/800/1000">
+        <img src="https://picsum.photos/800/600">
+        <img src="https://picsum.photos/800/1200">
+        <img src="https://picsum.photos/800/700">
+        <img src="https://picsum.photos/800/1100">
+        <img src="https://picsum.photos/800/800">
+
+    </div>
+
+    <aside class="project-info">
+
+        <h1>Nobilitas Bestiarum</h1>
+
+        <p>
+        Personal project exploring classical painting aesthetics through AI,
+        art direction and fictional worldbuilding.
+        </p>
+
+        <p>
+        2025–2026
+        </p>
+
+        <a href="index.html" class="back">
+            back →
+        </a>
+
+    </aside>
+
+</div>
+
+</body>
+</html>
