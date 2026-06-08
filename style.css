@@ -171,26 +171,23 @@ body{
 @media (max-width:768px){
 
     .header{
-        grid-template-columns:1fr;
-        gap:14px;
-        text-align:center;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        padding:12px 16px;
+    }
+
+    .logo img{
+        height:28px;
     }
 
     .name{
-        order:1;
-    }
-
-    .logo{
-        order:2;
+        font-size:14px;
     }
 
     .links{
-        order:3;
-        justify-self:center;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
+        justify-content:center;
+        gap:16px;
     }
 
 }
