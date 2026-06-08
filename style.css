@@ -204,14 +204,14 @@ body{
 }
 
 .project-gallery{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+    column-count:2;
+    column-gap:14px;
 }
 
 .project-gallery img{
     width:100%;
     display:block;
+    margin-bottom:14px;
 }
 
 .project-info{
@@ -263,6 +263,7 @@ body{
 
     .project-gallery{
         order:2;
+        column-count:1;
     }
 
 }
