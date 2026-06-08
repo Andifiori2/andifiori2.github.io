@@ -49,6 +49,12 @@ body{
     text-align:center;
 }
 
+.logo img{
+    height:38px;
+    width:auto;
+    display:block;
+}
+
 .logo a{
     display:block;
 }
