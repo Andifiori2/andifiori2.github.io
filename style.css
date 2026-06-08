@@ -108,10 +108,11 @@ body{
     opacity:.85;
 }
 
-.thumb{
+.thumb img{
     width:100%;
-    overflow:hidden;
-    background:var(--white);
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 .project-title{
