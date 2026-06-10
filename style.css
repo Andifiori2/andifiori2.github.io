@@ -192,6 +192,7 @@ body{
     }
 
 }
+
 /* =========================
    PROJECT PAGE
 ========================= */
@@ -231,6 +232,54 @@ body{
     font-size:13px;
     line-height:1.6;
     margin-bottom:20px;
+}
+
+.project-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:24px;
+}
+
+.project-tags span{
+    font-size:11px;
+    line-height:1;
+    border:1px solid var(--black);
+    padding:6px 8px;
+    border-radius:999px;
+}
+
+.project-links{
+    display:flex;
+    gap:12px;
+    margin-bottom:24px;
+}
+
+.project-links a{
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid var(--black);
+    border-radius:50%;
+
+    color:var(--black);
+    text-decoration:none;
+
+    font-size:11px;
+    line-height:1;
+}
+
+.project-links a:hover{
+    background:var(--black);
+    color:var(--white);
+}
+
+.project-year{
+    font-size:12px;
 }
 
 .back{
